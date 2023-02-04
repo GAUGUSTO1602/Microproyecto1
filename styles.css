@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+
+}
+
+body{
+    background-color: rgb(145, 224, 224);
+}
+
+.hero {
+    height: 700px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3 s ease-in-out;
+    background: url(./fotonoticia_20210430172721_420.jpg)center/cover;
+    animation: slider 28s infinite linear;
+
+}
+
+@keyframes slider{
+    0%{
+        background: url(./fotonoticia_20210430172721_420.jpg)center/cover;
+    }
+    25%{
+        background: url(./fotonoticia_20210430172721_420.jpg)center/cover;
+    }
+    26%{
+        background: url(./imagen2.jpg)center/cover;
+    }
+    50%{
+        background: url(./imagen2.jpg)center/cover;
+    }
+    51%{
+        background: url(./fotonoticia_20210430172721_420.jpg)center/cover;
+    }
+    75%{
+        background: url(./fotonoticia_20210430172721_420.jpg)center/cover;
+    }
+    76%{
+        background: url(./imagen2.jpg)center/cover;
+    }
+    100%{
+        background: url(./imagen2.jpg)center/cover;
+    }
+
+}
+
+.hero::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgb(35, 61, 104);
+    opacity: 0.8;
+}
+
+.hero_info{
+    padding: 0.3em;
+    position: absolute;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    color: azure;
+    margin: auto;
+}
+
+.hero_title{
+    line-height: 1.5;
+    font-size: 2em;
+    -webkit-text-stroke: 1px black;
+}
+
+
+.right_arrow {
+    cursor: pointer;
+    position: relative;
+    right: -700px;
+    height: 65px;
+    width: auto;
+    transition: all 0.3s ease 0s;
+}
+
+.right_arrow:hover{
+    transform: scale(1.2);
+}
+
+
+.left_arrow{
+    cursor: pointer;
+    position: relative;
+    left: -700px;
+    height: 65px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.left_arrow:hover{
+    transform: scale(1.2);
+}
