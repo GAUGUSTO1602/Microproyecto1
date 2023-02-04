@@ -12,3 +12,141 @@
 body{
     background-color: rgb(145, 224, 224);
 }
+
+.header{
+    background-color: rgb(10, 10, 111);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 5px 10%;
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    cursor: pointer;
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: azure;
+
+}
+
+.header .nav-links a:hover{
+    color: rgb(226, 226, 58);
+}
+
+
+.header button{
+    font-weight: 700;
+    color: rgb(10, 10, 111);
+    padding: 9px 25px;
+    background-color: azure;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.header button:hover{
+    background-color: azure;
+    color: rgb(10, 10, 111);
+    transform: scale(1.1);
+}
+
+.menu{
+    display: none;
+}
+
+@media screen and (max-width: 800px){
+    .nav-links{
+        display: none;
+    }
+
+    .menu {
+        display: inherit;
+    }
+}
+
+
+/* Nav */
+
+.header a{
+    text-decoration: none;
+}
+
+.header .overlay{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color:  rgb(10, 10, 111, .95);
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+.header .overlay .overlay-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .overlay a{
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    color: azure;
+}
+
+.header .overlay a:hover,
+.header .overlay a:focus{
+    color: rgb(145, 224, 224);
+}
+
+.header .overlay .close{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
+}
+
+@media screen and (max-height: 450px){
+    .header .overlay a{
+        font-size: 20px;
+    }
+
+    .header .overlay .close{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
