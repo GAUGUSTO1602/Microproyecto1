@@ -1,3 +1,5 @@
+/* grafica */
+
 const ctx = document.getElementById('canvas');
 
 var data = {
@@ -32,6 +34,9 @@ var chart1 = new Chart(ctx, {
     data: data,
     options: options
     });
+
+
+/* carrusel */
 
 const slider = document.querySelector("#slider");
 let sliderSelector = document.querySelectorAll(".sliderSec");
@@ -74,6 +79,8 @@ btnLeft.addEventListener('click', function(){
 });
 
 
+/* navegador movil */
+
 function openNav(){
     document.getElementById("mobile-menu").style.width = '100%';
 }
@@ -83,7 +90,7 @@ function closeNav(){
 }
 
 
-
+/* formulario */
 
 
 function enviarFormulario(){
