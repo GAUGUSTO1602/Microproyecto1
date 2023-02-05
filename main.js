@@ -25,6 +25,14 @@ var options = {
             }
         }
 };
+
+
+var chart1 = new Chart(ctx, {
+    type: 'radar',
+    data: data,
+    options: options
+    });
+
 const slider = document.querySelector("#slider");
 let sliderSelector = document.querySelectorAll(".sliderSec");
 let sliderSelectorLast = sliderSelector[sliderSelector.length - 1];
@@ -65,12 +73,6 @@ btnLeft.addEventListener('click', function(){
     moverIzquierda()
 });
 
-
-var chart1 = new Chart(ctx, {
-type: 'radar',
-data: data,
-options: options
-});
 
 function openNav(){
     document.getElementById("mobile-menu").style.width = '100%';
