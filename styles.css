@@ -13,96 +13,142 @@ body{
     background-color: rgb(145, 224, 224);
 }
 
-.hero {
-    height: 700px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    background-position: center;
-    transition: all 0.3 s ease-in-out;
-    background: url(./fotonoticia_20210430172721_420.jpg)center/cover;
-    animation: slider 28s infinite linear;
+
+@media screen and (min-width: 400px){
+
+    .hero {
+        margin: auto;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        max-width: 100%;
+        position: relative;
+    
+    }
+    
+    
+    .hero_info{
+        display: flex;
+        width: 100%;
+        margin-left: -110%;   
+    }
+    
+    .hero_title{
+        text-align: center;
+        color: azure;
+        margin: auto;
+        line-height: 1.5;
+        font-size: 2em;
+        -webkit-text-stroke: 1px black;
+    }
+    
+    
+    .sliderImg{
+        display: block;
+        height: 400px;
+        width: 490px;
+        object-fit: cover;
+    }
+
+    .sliderBtn {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: rgb(240, 255, 255, 0.6);
+        top: 50%;
+        transform: translateY(80%);
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 50%;
+        cursor: pointer;
+
+    }
+
+    .sliderBtn:hover{
+        background: white;
+
+    }
+
+    .sliderBtnR{
+        right: 10px;
+
+    }
+
+    .sliderBtnL{
+        left: 10px;
+    }
+
+
+
 
 }
 
-@keyframes slider{
-    0%{
-        background: url(./fotonoticia_20210430172721_420.jpg)center/cover;
+@media (min-width: 1000px){
+
+    .hero {
+        margin: auto;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        max-width: 100%;
+        position: relative;
+    
     }
-    25%{
-        background: url(./fotonoticia_20210430172721_420.jpg)center/cover;
+    
+    
+    .hero_info{
+        display: flex;
+        width: 100%;
     }
-    26%{
-        background: url(./imagen2.jpg)center/cover;
+    
+    .hero_title{
+        text-align: center;
+        color: azure;
+        margin: auto;
+        line-height: 1.5;
+        font-size: 2em;
+        -webkit-text-stroke: 1px black;
     }
-    50%{
-        background: url(./imagen2.jpg)center/cover;
-    }
-    51%{
-        background: url(./fotonoticia_20210430172721_420.jpg)center/cover;
-    }
-    75%{
-        background: url(./fotonoticia_20210430172721_420.jpg)center/cover;
-    }
-    76%{
-        background: url(./imagen2.jpg)center/cover;
-    }
-    100%{
-        background: url(./imagen2.jpg)center/cover;
+    
+    
+    .sliderImg{
+        display: block;
+        height: 550px;
+        width: 1600px;
+        object-fit: cover;
     }
 
-}
+    .sliderBtn {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background-color: rgb(240, 255, 255, 0.6);
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 45px;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 50%;
+        cursor: pointer;
 
-.hero::before{
-    content: "";
-    height: 100%;
-    width: 100%;
-    background-color: rgb(35, 61, 104);
-    opacity: 0.8;
-}
+    }
 
-.hero_info{
-    padding: 0.3em;
-    position: absolute;
-    width: 100%;
-    max-width: 1000px;
-    text-align: center;
-    color: azure;
-    margin: auto;
-}
+    .sliderBtn:hover{
+        background: white;
 
-.hero_title{
-    line-height: 1.5;
-    font-size: 2em;
-    -webkit-text-stroke: 1px black;
-}
+    }
 
+    .sliderBtnR{
+        right: 10px;
 
-.right_arrow {
-    cursor: pointer;
-    position: relative;
-    right: -700px;
-    height: 65px;
-    width: auto;
-    transition: all 0.3s ease 0s;
-}
+    }
 
-.right_arrow:hover{
-    transform: scale(1.2);
-}
+    .sliderBtnL{
+        left: 10px;
+    }
 
 
-.left_arrow{
-    cursor: pointer;
-    position: relative;
-    left: -700px;
-    height: 65px;
-    width: auto;
-    transition: all 0.3s;
-}
-
-.left_arrow:hover{
-    transform: scale(1.2);
 }
