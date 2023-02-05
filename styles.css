@@ -12,3 +12,55 @@
 body{
     background-color: rgb(145, 224, 224);
 }
+
+
+.skills{
+    position: relative;
+}
+
+.container_title{
+    position: relative;
+    background-color: rgb(10, 10, 111);
+}
+
+
+
+
+@media screen and (min-width: 400px){
+    .title{
+        color: white;
+        -webkit-text-stroke: 1px black;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 150%;
+        text-align: left;
+        margin-left: 50px;
+        position: relative;
+
+    }
+    
+}
+
+@media (min-width: 1000px){
+
+
+    .title{
+        color: white;
+        -webkit-text-stroke: 1px black;
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 150%;
+        text-align: left;
+        margin-left: 50px;
+        position: relative;
+
+    }
+    
+
+}
+
+.contG{
+    width: 1000px;
+    display: flex;
+    margin: auto;
+}
