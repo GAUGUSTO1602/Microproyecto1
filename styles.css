@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;900&display=swap');
 
 *{
     box-sizing: border-box;
@@ -12,3 +12,108 @@
 body{
     background-color: rgb(145, 224, 224);
 }
+
+.aboutMe{
+    position: relative;
+}
+
+
+
+.container_title{
+    position: relative;
+    background-color: rgb(10, 10, 111);
+}
+
+@media screen and (min-width: 400px){
+    .title{
+        color: white;
+        -webkit-text-stroke: 1px black;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 150%;
+        text-align: left;
+        margin-left: 50px;
+        position: relative;
+
+    }
+
+    .nombre {
+        position: relative;
+        color: white;
+        -webkit-text-stroke: 1px black;
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 150%;
+        text-align: center;
+        margin-top: 35px;
+        position: relative;
+    }
+    .aboutMe p{
+        position: relative;
+        -webkit-text-stroke: 1px black;
+        text-align: center;
+        text-align: justify;
+        margin-top: 30px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .foto {
+        position: relative;
+        width: 350px;
+        height: 350px;
+        padding: 20px;
+        display: block;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1000px){
+
+    .content{
+        display: grid;
+        grid-template-columns: 1fr max-content;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .title{
+        color: white;
+        -webkit-text-stroke: 1px black;
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 150%;
+        text-align: left;
+        margin-left: 50px;
+        position: relative;
+
+    }
+
+    .nombre {
+        position: relative;
+        color: white;
+        -webkit-text-stroke: 1px black;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 150%;
+        text-align: left;
+        margin-top: 25px;
+        margin-left: 50px;
+        position: relative;
+    }
+
+    .aboutMe p{
+        position: relative;
+        -webkit-text-stroke: 1px black;
+        text-align: left;
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+
+    .foto {
+        width: 500px;
+        height: 500px;
+        padding: 20px;
+    }
+}
+
