@@ -150,3 +150,127 @@ body{
         right: 35px;
     }
 }
+
+
+@media screen and (min-width: 400px){
+
+    .hero {
+        margin: auto;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        max-width: 100%;
+        position: relative;
+    
+    }
+    
+    
+    .hero_info{
+        display: flex;
+        width: 100%;
+        margin-left: -110%;   
+    }
+    
+    
+    
+    .sliderImg{
+        display: block;
+        height: 400px;
+        width: 490px;
+        object-fit: cover;
+    }
+
+    .sliderBtn {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: rgb(240, 255, 255, 0.6);
+        top: 50%;
+        transform: translateY(80%);
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 50%;
+        cursor: pointer;
+
+    }
+
+    .sliderBtn:hover{
+        background: white;
+
+    }
+
+    .sliderBtnR{
+        right: 10px;
+
+    }
+
+    .sliderBtnL{
+        left: 10px;
+    }
+
+
+
+
+}
+
+@media (min-width: 1000px){
+
+    .hero {
+        margin: auto;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        max-width: 100%;
+        position: relative;
+    
+    }
+    
+    
+    .hero_info{
+        display: flex;
+        width: 100%;
+    }
+    
+    
+    
+    .sliderImg{
+        display: block;
+        height: 550px;
+        width: 1600px;
+        object-fit: cover;
+    }
+
+    .sliderBtn {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background-color: rgb(240, 255, 255, 0.6);
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 45px;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 50%;
+        cursor: pointer;
+
+    }
+
+    .sliderBtn:hover{
+        background: white;
+
+    }
+
+    .sliderBtnR{
+        right: 10px;
+
+    }
+
+    .sliderBtnL{
+        left: 10px;
+    }
+
+
+}
