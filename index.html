@@ -7,8 +7,7 @@
     <title>C.V. Gabriel Gonzalez</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
-    <body>
-        
+    <body>     
 
         <header class="header">
             <div class="logo">
@@ -18,10 +17,10 @@
             <nav>
                 <ul class="nav-links">
 
-                    <li><a href="#">About me</a></li>
-                    <li><a href="#">Experience</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Contact me</a></li>               
+                    <li><a href="#aboutMe">About me</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#ContactMe">Contact me</a></li>               
 
                 </ul>
             </nav>
@@ -31,10 +30,10 @@
             <div id="mobile-menu" class="overlay">
                 <a onclick="closeNav()" href="" class="close">&times;</a>
                 <div class="overlay-content">
-                    <a href="">About me</a>
-                    <a href="">Experience</a>
-                    <a href="">Skills</a>
-                    <a href="">Contact me</a>
+                    <a href="#aboutMe" onclick="closeNav()">About me</a>
+                    <a href="#experience" onclick="closeNav()">Experience</a>
+                    <a href="#Skills" onclick="closeNav()">Skills</a>
+                    <a href="#ContactMe" onclick="closeNav()">Contact me</a>
                 </div>
             </div>
 
@@ -45,7 +44,7 @@
 
             <div class="hero_info" id="slider">  
                 
-                <div class="sliderSec"><img src="./imagen3.jpg" alt="" class="sliderImg"></div>
+                <div class="sliderSec"><img src="./b2ap3_large_profesion-de-programador-web.jpg" alt="" class="sliderImg"></div>
                 <div class="sliderSec"><img src="./imagen2.jpg" alt="" class="sliderImg"></div>
                 <div class="sliderSec"><img src="./25C13A4B-4DCB-4C46-941B-0966ED7BC1DA.jpeg" alt="" class="sliderImg"></div>
                 <div class="sliderSec"><img src="./code.jpg" alt="" class="sliderImg"></div>
@@ -58,7 +57,7 @@
         </section>
 
 
-        <section class="aboutMe">
+        <section class="aboutMe" id="aboutMe">
             
             <div class="container_title">
                 <h1 class="title"> About me</h1>
@@ -84,7 +83,7 @@
 
         </section>
 
-        <section class="Skills">
+        <section class="Skills" id="Skills">
             
             <div class="container_title">
                 <h1 class="title">Skills</h1>
@@ -96,7 +95,7 @@
 
         </section>
 
-        <section class="experience">
+        <section class="experience" id="experience">
             
             <div class="container_title">
                 <h1 class="title"> Experience</h1>
@@ -140,6 +139,31 @@
                     <img class="foto" src="./ba.png" alt="foto">
                 </figure>
 
+            </div>
+
+        </section>
+
+        <section class="ContactMe" id="ContactMe">
+            
+            <div class="container_title">
+                <h1 class="title">Contact me</h1>
+            </div>
+
+            <div class="cont">
+                <div class="info-form">
+                    <p>Contactate conmigo a traves de los siguientes medios!</p>
+                    <a href="https://api.whatsapp.com/send?phone=%2B584242798715&text=No+he+dormido+%3A%29" target="_blank"><img src="./327690.png" alt="telefono" class="icon">   0424-2798715</a>
+                    <a href="mailto:g.gabriel@correo.unimet.edu.ve" target="_blank"><img src="./Logo_Gmail_(2015-2020).svg.png" alt="correo" class="icon">   g.gabriel@correo.unimet.edu.ve</a>
+                    <a href="https://www.google.com/maps/dir//universidad+metropolitana+de+caracas/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x8c2a576d54142307:0x346aa4e5e126367e?sa=X&ved=2ahUKEwidwaDWl_78AhWbkmoFHRs-AcMQ9Rd6BAhuEAU" target="_blank"><img src="./854878.png" alt="ubicacion" class="icon">   Caracas, Venezuela</a>
+                    <a href="https://es-la.facebook.com" target="_blank"><img src="./584ac2d03ac3a570f94a666d.png" alt="facebook" class="icon">   Gabriel Gonzalez</a>
+                </div>
+                <form action="#" autocomplete="off">
+                    <input type="text" name="Nombre" placeholder="Ingresa tu nombre" class="campo" id="name">
+                    <input type="text" name="email" placeholder="Ingresa tu email" class="campo" id="email">
+                    <textarea name="mensaje" placeholder="Ingresa un mensaje" id="mensaje"></textarea>
+                    <input type="submit" onclick="enviarFormulario()" name="Enviar" value="Enviar mensaje" class="btn-enviar">
+
+                </form>
             </div>
 
         </section>
